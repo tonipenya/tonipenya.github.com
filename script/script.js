@@ -8,6 +8,12 @@ var defaultPeg = '';
 var lastGameCompletePegId = defaultPeg;
 
 $(function() {
+    noredirect = getParameterByName("noredirect");
+    if (jQuery.browser.mobile && noredirect == false) {
+        $('.footer').css('visibility', 'visible');
+        return;
+    }
+
     $('#hanoi').css('visibility', 'visible');
 
     // Define dragables
@@ -35,7 +41,7 @@ function initPegs() {
 }
 
 function initDisks() {
-    var i = 2;
+    var i = 1;
     var numberOfPegs = $('.hanoi_peg').size();
 
     $($('.hanoi_disk').get().reverse()).each(function() {
@@ -53,7 +59,7 @@ function initDisks() {
 
 function resizeDisks() {
     var size = 290;
-    var step = 25;
+    var step = 20;
     $($('.hanoi_disk').get().reverse()).each(function() {
         $(this).width(size);
         size -= step;
@@ -173,4 +179,15 @@ function isPegEmpty(peg) {
     }
     
     return size == 0;
+}
+
+function getParameterByName(name){
+    name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+    var regexS = "[\\?&]" + name + "=([^&#]*)";
+    var regex = new RegExp(regexS);
+    var results = regex.exec(window.location.search);
+    if(results == null)
+        return "";
+    else
+        return decodeURIComponent(results[1].replace(/\+/g, " "));
 }

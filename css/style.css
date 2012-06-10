@@ -17,6 +17,10 @@ a, a:visited {
     text-decoration: none;
 }
 
+.footer {
+    visibility: hidden;
+}
+
 #hanoi {
     position: absolute;
     top: 50%;
@@ -84,8 +88,18 @@ a, a:visited {
 
 #endomondo {
     background-image: url("images/icon/endomondo.png");
-    background-color: #79a800;
+    background-color: #87aa14;
     border-color: #5e8300;
+}
+
+#flickr {
+    background-image: url("images/icon/flickr.gif");
+    background-color: #fff;
+    border-color: #cacaca;
+}
+
+#flickr a {
+    color:#0063dc;
 }
 
 #github {
