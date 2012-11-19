@@ -1,0 +1,3 @@
+[submodule "kiosko"]
+	path = kiosko
+	url = git@github.com:tonipenya/kiosko.git
