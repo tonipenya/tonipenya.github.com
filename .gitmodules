@@ -1,3 +1,6 @@
 [submodule "kiosko"]
 	path = kiosko
 	url = git://github.com/tonipenya/kiosko.git
+[submodule "academia"]
+	path = academia
+	url = git@bitbucket.org:tonipenya/homepage.git
