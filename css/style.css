@@ -1,0 +1,65 @@
+body {
+    background-image: url('../img/debut_dark.png');
+}
+
+.abstract, .collapse {
+    display: none;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.booktitle, .conference, .journal, .school {
+    font-style: italic;
+}
+
+a, a:hover, a:visited {
+    text-decoration: none;
+    color: #D33682;
+}
+
+h1 a, h1 a:visited, h1 a:hover,
+h2 a, h2 a:visited, h2 a:hover {
+    color:#111;
+}
+
+h1 {
+    color: #111;
+}
+
+h2 {
+    color: #111;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+#content {
+    color: #111;
+    box-shadow: 5px 5px 8px 2px black;
+    background-color: white;
+    margin: auto;
+    width: 500px;
+    padding: 100px 150px 100px 150px;
+    text-align: justify;
+    font-size: 14px;
+    font-family: 'Computer Modern Serif';
+}
+
+#title {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    padding-bottom: 15px;
+}
+
+ul li:last-child {
+    padding-bottom: 0px;
+}
