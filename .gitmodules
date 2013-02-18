@@ -3,4 +3,4 @@
 	url = git://github.com/tonipenya/kiosko.git
 [submodule "academia"]
 	path = academia
-	url = git@bitbucket.org:tonipenya/homepage.git
+	url = git@github.com:tonipenya/academic_homepage.git
