@@ -37,15 +37,15 @@ a, a:visited {
 
 #game {
     width:850px;
-    height:275px;
+    height:280px;
     text-align:center;
     background: #fff;
 }
 
 .hanoi_peg {
-    height:90%;
+    height:93%;
     width:4%;
-    margin: 28px 14%;
+    margin: 20px 14%;
     background: #b30000;
     display:inline-block;
     bottom: 0px;
